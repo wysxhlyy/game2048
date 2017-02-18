@@ -1,0 +1,52 @@
+/**
+是关于字体、表格、排版样式的定义文档。包括字体、表格、数字的大小、颜色、边距等。
+ */
+
+#title{
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0;
+    display: block;
+    float: left;
+
+}
+
+html,body{
+    padding: 0;
+    background: #faf8ef;
+    color: #776e65;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+}
+
+.score-container{
+    position: relative;
+    display: inline-block;
+    background: #bbada0;
+    padding: 15px 25px;
+    font-size: 25px;
+    height: 25px;
+    line-height: 47px;
+    font-weight: bold;
+    border-radius: 3px;
+    color: white;
+    margin-top: 8px;
+    text-align: center;
+    float: right;
+}
+
+.best-container{
+    position: relative;
+    display: inline-block;
+    background: #bbada0;
+    padding: 15px 25px;
+    font-size: 25px;
+    height: 25px;
+    line-height: 47px;
+    font-weight: bold;
+    border-radius: 3px;
+    color: white;
+    margin-top: 8px;
+    text-align: center;
+    float: right;
+}
