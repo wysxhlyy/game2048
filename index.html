@@ -7,67 +7,49 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link href="2048.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="support2048.js"></script>
+    <script type="text/javascript" src="showAnimation.js"></script>
+    <script type="text/javascript" src="main2048.js"></script>
+
 
     <title>Mario's 2048 Game</title>
-    <link href="2048.css" rel="stylesheet">
 </head>
 
 <body>
 
+        <header>
+            <h1>2048</h1>
+            <Button class="btn-default" id="newGameButton" onclick="newGame()">New Game</Button>
+            <p>score: <span id="score">0</span> </p>
+        </header>
 
-    <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-            <div id="header">
-                <div>
-                    <h1 id="title">2048</h1>
-                </div>
-                <div class="score-container">
-                    <a class="score">Score</a>
-                </div>
-                <div class="best-container">
-                    <a class="best">Best</a>
-                </div>
-            </div>
+        <div id="grid-container">
+            <div class="grid-cell" id="grid-cell-0-0"></div>
+            <div class="grid-cell" id="grid-cell-0-1"></div>
+            <div class="grid-cell" id="grid-cell-0-2"></div>
+            <div class="grid-cell" id="grid-cell-0-3"></div>
 
-            <div id="main">
-                <div class="map">
-                    <div class="mapRow">
-                        <div class="mapColumn1"></div>
-                        <div class="mapColumn2"></div>
-                        <div class="mapColumn3"></div>
-                        <div class="mapColumn4"></div>
-                    </div>
-                    <div class="mapRow">
-                        <div class="mapColumn1"></div>
-                        <div class="mapColumn2"></div>
-                        <div class="mapColumn3"></div>
-                        <div class="mapColumn4"></div>
-                    </div>
-                    <div class="mapRow">
-                        <div class="mapColumn1"></div>
-                        <div class="mapColumn2"></div>
-                        <div class="mapColumn3"></div>
-                        <div class="mapColumn4"></div>
-                    </div>
-                    <div class="mapRow">
-                        <div class="mapColumn1"></div>
-                        <div class="mapColumn2"></div>
-                        <div class="mapColumn3"></div>
-                        <div class="mapColumn4"></div>
-                    </div>
-                </div>
-            </div>
+            <div class="grid-cell" id="grid-cell-1-0"></div>
+            <div class="grid-cell" id="grid-cell-1-1"></div>
+            <div class="grid-cell" id="grid-cell-1-2"></div>
+            <div class="grid-cell" id="grid-cell-1-3"></div>
 
-            <div id="footer">
-                <p> <strong>HOW TO PLAY :</strong> Use your arrow keys to move the tiles. When two tiles with the same number touch, they merge into one!</p>
+            <div class="grid-cell" id="grid-cell-2-0"></div>
+            <div class="grid-cell" id="grid-cell-2-1"></div>
+            <div class="grid-cell" id="grid-cell-2-2"></div>
+            <div class="grid-cell" id="grid-cell-2-3"></div>
 
-            </div>
+            <div class="grid-cell" id="grid-cell-3-0"></div>
+            <div class="grid-cell" id="grid-cell-3-1"></div>
+            <div class="grid-cell" id="grid-cell-3-2"></div>
+            <div class="grid-cell" id="grid-cell-3-3"></div>
+
 
         </div>
-        <div class="col-md-4"></div>
 
-    </div>
+
 
 
 

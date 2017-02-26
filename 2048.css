@@ -2,141 +2,59 @@
 是关于字体、表格、排版样式的定义文档。包括字体、表格、数字的大小、颜色、边距等。
  */
 
-#title{
-    font-size: 80px;
+header{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+}
+
+header h1{
+    font-family: Arial;
+    font-size: 60px;
     font-weight: bold;
-    margin: 0;
+}
+
+header #newGameButton{
     display: block;
-    float: left;
+    margin: 20px auto;
 
+    width: 100px;
+    padding: 10px 10px;
+    background-color: #8f7a66;
+    font-family: Arial;
+    color: white;
+    border-radius:10px ;
+    text-decoration: none;
 }
 
-html,body{
-    padding: 0;
-    background: #faf8ef;
-    color: #776e65;
-    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
-    font-size: 18px;
+header #newGameButton:hover{
+    background-color: #9f8b77;
 }
 
-#header{
-    text-align: center;
-    display: block;
+header p{
+    font-family: Arial;
+    font-size: 25px;
+    margin: 20px auto;
 }
 
-.score-container{
-    position: relative;
-    display: inline-block;
-    background: #bbada0;
-    width: 80px;
-    height: 55px;
-    margin-left: 50px;
-    border-radius: 3px;
-    text-align: center;
-    font-size: 15px;
-    padding-right: 45px;
-    padding-top: 5px;
-
-}
-
-.best-container{
-    position: relative;
-    display: inline-block;
-    background: #bbada0;
-    font-size: 15px;
-    width: 80px;
-    height: 50px;
-    margin-left: 5px;
-    height: 55px;
-    border-radius: 3px;
-    text-align: center;
-    padding-right: 35px;
-    padding-top: 5px;
-}
-
-.row{
-    margin-top: 2%;
-
-}
-
-.score{
-    position: absolute;
-    color: #eee4da;
-}
-
-.best{
-    position: absolute;
-    color: #eee4da;
-
-}
-
-.map{
-    background: #bbada0;
-    display: block;
-    width: 80%;
+#grid-container{
+    width:500px;
     height: 500px;
-    margin-top: 100px;
+    padding: 20px;
+
+    margin: 50px auto;
+    background-color: #bbada0;
+
     border-radius: 10px;
-    padding: 10px 10px 10px 10px;
+    position: relative;
 }
 
-.mapRow{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 5px 0px 5px 5px;
-    width: 100%;
-    height: 24%;
-}
+.grid-cell{
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    background-color: #ccc0b3;
 
-.mapColumn1{
-    background: rgba(238, 228, 218, 0.35);
-    width: 22%;
-    height: 100%;
-    left: 1%;
-    margin-right: 1%;
-    border-radius:5px;
-    float: left;
-}
-
-.mapColumn2{
-    background: rgba(238, 228, 218, 0.35);
-    width: 22%;
-    height: 100%;
-    margin-left: 2%;
-    margin-right: 1%;
-    display: inline;
-    border-radius: 5px;
-
-    float: left;
-}
-
-.mapColumn3{
-    background: rgba(238, 228, 218, 0.35);
-    width: 22%;
-    height: 100%;
-    margin-left: 2%;
-    margin-right: 1%;
-    float: left;
-    border-radius: 5px;
-
-}
-
-.mapColumn4{
-    background: rgba(238, 228, 218, 0.35);
-    width: 22%;
-    height: 100%;
-    margin-left:2%;
-    float: left;
-    border-radius: 5px;
-
-}
-
-#footer{
-    width: 80%;
-    height: 180px;
-    margin-top: 5%;
-    color: #776e65;
-    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.65;
-    font-size: 20px;
+    position: absolute;
 }
